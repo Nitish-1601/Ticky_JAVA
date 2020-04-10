@@ -1,0 +1,29 @@
+import java.util.*;
+public class MigratryBirds
+{
+    public static void main(String []args)
+    {
+        int max=0,c=0,a=0,count=0;
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        arr[i]=in.nextInt();
+        for(int i=1;i<=5;i++)
+        {
+            c=0;
+          for(int j=0;j<n;j++){
+              if(arr[j]==i){
+                  c++;
+                    a=i;
+          }
+        }
+        if(c>count){
+            count=c;
+            max=a;
+        }
+        }
+        System.out.print(max);
+    }
+
+}
