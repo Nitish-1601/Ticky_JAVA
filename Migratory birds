@@ -1,5 +1,5 @@
 import java.util.*;
-public class MigratryBirds
+public class MigratryBird
 {
     public static void main(String []args)
     {
