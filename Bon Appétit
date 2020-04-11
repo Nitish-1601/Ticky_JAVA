@@ -1,0 +1,28 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+public class BonAppetit
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        int total=0;
+        int n=in.nextInt();
+        int k=in.nextInt();
+        int ar[]=new int[n];
+        for(int i=0;i<n;i++){
+        ar[i]=in.nextInt();
+        total+=ar[i];
+        }
+        int b=in.nextInt();
+        int bill=total-ar[k];
+        if(b-bill/2==0)
+        System.out.print("Bon Appetit");
+        else
+        System.out.print(b-bill/2);
+    }
+}
