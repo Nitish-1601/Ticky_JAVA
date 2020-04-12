@@ -1,0 +1,18 @@
+import java.util.*;
+public class DrawingBook
+{
+    public static void main(String[] args)
+    {
+        int c=0;
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int p=in.nextInt();
+        int back=n/2-p/2;
+        int front=p/2;
+        if(front<back)
+        System.out.print(front);
+        else
+        System.out.print(back);
+
+    }
+}
