@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class CatchMouse
+{
+    public static void main(String []args)
+    {
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        while(n!=0)
+        {
+            int a=in.nextInt();
+            int b=in.nextInt();
+            int c=in.nextInt();
+            a-=c;
+            b-=c;
+            if(a<0)
+            a*=-1;
+            if(b<0)
+            b*=-1;
+            if(a>b)
+            System.out.println("Cat B");
+            else if(a<b)
+            System.out.println("Cat A");
+            else
+            System.out.println("Mouse C");
+            n--;
+        }
+    }
+}
